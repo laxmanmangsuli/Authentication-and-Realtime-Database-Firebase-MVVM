@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Student Admin App</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="default_web_client_id">308586010097-s0u57q9aic3sf8gmatp7k39q74fp94ft.apps.googleusercontent.com</string>
+    <string name="log_out">Log Out</string>
+    <string name="select">Select</string>
+
+    <string name="action_Student">Student</string>
+    <string name="action_Admin">Admin</string>
+    <string name="submit">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="save">Add</string>
+    <string name="name">Name</string>
+    <string name="click_here_for_selection">Select the Department</string>
+    <string name="admin_name">Admin Name</string>
+    <string name="alert_title">Delete</string>
+    <string name="alert_message">Do you Want Delete This Data?</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "308586010097",
+    "project_id": "student-admin-app",
+    "storage_bucket": "student-admin-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308586010097:android:f7554aa615ac0dec1e2050",
+        "android_client_info": {
+          "package_name": "com.example.studentadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308586010097-s0u57q9aic3sf8gmatp7k39q74fp94ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentadminapp",
+            "certificate_hash": "2c7daf69f07f78743266e531e3c4a10805c76367"
+          }
+        },
+        {
+          "client_id": "308586010097-6v280pld1cfl5eat7c62fjfr9rblqlh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT3krRyJ6LkfODrohbyRYrVu4v8zn9Z-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308586010097-6v280pld1cfl5eat7c62fjfr9rblqlh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
