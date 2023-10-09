@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.studentadminapp.databinding.ActivityStudentSignUpBinding
 import com.example.studentadminapp.model.Student
 import com.example.studentadminapp.view.MainActivity
+import com.example.studentadminapp.viewmodel.adapter.StudentViewModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -21,8 +22,9 @@ class StudentSignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         dbref = FirebaseDatabase.getInstance().getReference("Student")
-        val database = FirebaseDatabase.getInstance().reference
+//        val database = FirebaseDatabase.getInstance().reference
         binding.btnAdd.setOnClickListener {
+
 
             val name = binding.etName.text.toString()
             val email = binding.etEmail.text.toString()
