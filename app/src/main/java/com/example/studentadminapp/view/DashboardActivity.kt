@@ -36,15 +36,17 @@ class DashboardActivity : AppCompatActivity() {
             .requestEmail()
             .build()
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-        findViewById<Button>(R.id.button).setOnClickListener {
-            mGoogleSignInClient.signOut().addOnCompleteListener {
+           findViewById<Button>(R.id.button).setOnClickListener {
+            mGoogleSignInClient.signOut()
                 val intent = Intent(this, MainActivity::class.java)
                 Toast.makeText(this, "Logging Out", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
-            }
+
         }
 
     }
+
+
 
     override fun onBackPressed() {
         super.onBackPressed()
