@@ -42,6 +42,7 @@ class ShowStudentActivity : AppCompatActivity() {
                 dbref.removeValue()
                     .addOnSuccessListener {
                         Toast.makeText(this, "Data Deleted", Toast.LENGTH_SHORT).show()
+                        finish()
                         startActivity(Intent(this, MainActivity::class.java))
                     }
                     .addOnFailureListener {
@@ -68,6 +69,7 @@ class ShowStudentActivity : AppCompatActivity() {
             val stuInfo = Student(id, names, emails, standards, passwords)
             Toast.makeText(this, "Data Updated", Toast.LENGTH_SHORT).show()
             dbref.setValue(stuInfo)
+            finish()
             startActivity(Intent(this, MainActivity::class.java))
         }
         binding.etShowStandard.setOnClickListener {

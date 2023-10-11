@@ -140,8 +140,9 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         if (GoogleSignIn.getLastSignedInAccount(this) != null) {
             Log.d("MainActivity", "User is signed in. Starting DashboardActivity.")
-            startActivity(Intent(this, DashboardActivity::class.java))
             finish()
+            startActivity(Intent(this, DashboardActivity::class.java))
+
         }
     }
     private fun signInWithGoogle() {
@@ -169,6 +170,7 @@ class MainActivity : AppCompatActivity() {
                             val editor = sharedPreferences.edit()
                             editor.putString("Email", account.email)
                             editor.apply()
+                            finish()
                             startActivity(intent)
 
                         } else {

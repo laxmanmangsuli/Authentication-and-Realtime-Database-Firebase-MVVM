@@ -34,6 +34,7 @@ class AdminSignUpActivity : AppCompatActivity() {
             dbref.child(id!!).setValue(addStudent)
                 .addOnSuccessListener {
                     Toast.makeText(this, "Data Added Successfully", Toast.LENGTH_SHORT).show()
+                    finish()
                     startActivity(Intent(this, MainActivity::class.java))
                 }
                 .addOnFailureListener { error ->

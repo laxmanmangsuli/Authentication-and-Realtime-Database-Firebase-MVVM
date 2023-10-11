@@ -40,6 +40,7 @@ class DashboardActivity : AppCompatActivity() {
             mGoogleSignInClient.signOut()
                 val intent = Intent(this, MainActivity::class.java)
                 Toast.makeText(this, "Logging Out", Toast.LENGTH_SHORT).show()
+               finish()
                 startActivity(intent)
 
         }
